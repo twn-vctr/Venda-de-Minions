@@ -28,7 +28,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "react-scripts build && aws s3 sync build/ s3://vendademinions.com --acl public-read",
     "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twn-vctr/Venda-de-Minions.git"
   },
   "eslintConfig": {
     "extends": [
